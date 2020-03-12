@@ -21,7 +21,7 @@
                           <th>รหัสคณะ</th>
                           <th>ชื่อคณะ</th>
                       </tr>
-                      @foreach ($facultys as $faculty)
+                      @foreach ($facultys as $facultys)
                       <tr>
                       <td>{{ $facultys->id}}</td>
                       <td>{{ $facultys->fac_id}}</td>
