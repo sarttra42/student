@@ -15,8 +15,10 @@ class FacultyController extends Controller
     public function index()
     {
         $facultys = Facultys::all();
+        $count = Facultys::count();
         return view('facultys.index',[
-            'facultys' => $facultys
+            'facultys' => $facultys,
+            'count' => $count
         ]);
 
     }
