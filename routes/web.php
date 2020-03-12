@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Route::get('facultys','FacultyController@index')->name('facultys');
 Route::get('student','StudentController@index')->name('student');
-
+Route::get('majors','MajorsController@index')->name('majors');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

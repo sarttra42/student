@@ -41,6 +41,9 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
+                                <a class="nav-link" href="{{ route('majors') }}">ข้อมูลวิชา</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="{{ route('facultys') }}">ข้อมูลคณะ</a>
                             </li>
                             <li class="nav-item">

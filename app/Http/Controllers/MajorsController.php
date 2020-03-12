@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Majors;
 class MajorsController extends Controller
 {
     /**
@@ -13,7 +13,13 @@ class MajorsController extends Controller
      */
     public function index()
     {
-        //
+        $majors = Majors::all();
+        $count = Majors::count();
+        $student = Majors::paginate(10);
+        return view('majors.index',[
+            'majors' => $majors,
+            'count' => $count
+        ]);
     }
 
     /**
